@@ -94,11 +94,11 @@ BEGIN
     -- Mengupdate saldo akun pengirim
     UPDATE akun
     SET Saldo = Saldo - nominal
-    WHERE Id_Akun = idPengirim;
+    WHERE Id = idPengirim;
     -- Mengupdate saldo akun penerima
     UPDATE akun
     SET Saldo = Saldo + nominal
-    WHERE Id_Akun = idPenerima;
+    WHERE Id = idPenerima;
 
     COMMIT;
 END;
