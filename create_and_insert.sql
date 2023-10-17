@@ -35,6 +35,10 @@ CREATE TABLE IF NOT EXISTS transaksi (
     DeletedAt TIMESTAMP
 );
 
+-- ubah tipe data pada table nasabah kolom no_telp
+-- ALTER TABLE nasabah
+-- ALTER COLUMN Nomor_Telepon TYPE VARCHAR(20);
+
 -- CRUD nasabah
 -- CREATE
 -- Menambahkan nasabah baru
@@ -50,7 +54,7 @@ CREATE INDEX idx_nasabah ON nasabah (Nama);
 
 -- READ
 -- Menampilkan seluruh data nasabah
-SELECT * FROM nasabah;
+SELECT * FROM nasabah ORDER BY Nama ASC;
 
 -- UPDATE
 -- Mengubah alamat seorang nasabah
